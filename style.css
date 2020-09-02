@@ -10,8 +10,11 @@ body{
 /* .container{
     margin: 80px;
 } */
+.contnav, .imghead, .title_paragh p, .line{
+    display: none;
+}
 body .cont{
-    max-width: 1600px;
+    max-width: 100%;
     /* background-color: #E63946; */
     /* margin-left: 84px; */
     /* background-color: #F8F8F8; */
@@ -24,12 +27,22 @@ body .header{
     background-image: url("porfolio_design/assets/BG.png");
     background-repeat: no-repeat;
      /* background-color: rgba(255, 250, 240, 0.774);  */
-     background-color: #F8F8F8;
+     /* background-color: #F8F8F8; */
      height: 100vh;
      background-position-y: bottom;
-     transform: translate3d(50%, 0, 0);
-     animation: slideInB 2.5s ease-in-out forwards;
+     /* transform: translate3d(50%, 0, 0); */
+     /* animation: slideInB 2.5s ease-in-out forwards; */
  
+ }
+ .frontbg{
+    background-color: #F8F8F8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 813px);
+    height: 100vh;
+    z-index: -2;
+    transition: all 1s cubic-bezier(0.55, 0.06, 0.68, 0.19);
  }
  @keyframes slideInB {
      0% {
@@ -41,7 +54,7 @@ body .header{
    }
 body .header .title_paragh {
     position: relative;
-    top: 268px;
+    top: 50%;
     left: 30px;
     padding-left: 110px;
 
@@ -52,8 +65,6 @@ body .header .title_paragh {
     font-weight: 800;
     font-size: 43px;
     line-height: 53px;
-    
-
 }
 body .header .title_paragh .line{
     color: black;
@@ -73,7 +84,6 @@ line-height: 24px;
 
 
 body .header .title_paragh .line:before {
-    
     content: "";
     display: block;
     width: 45px;
@@ -83,17 +93,20 @@ body .header .title_paragh .line:before {
     top: 26%;
     position: absolute;
     left: -12px;
-      
 }
 body .header .imgback{
     background-color: #A8DADC;
-    position: relative;
-    /* top: 126px; */
-    left: 235px;
-    width : 813px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 813px;
     height: 100vh;
-    transform: translate3d(100%, 0, 0);
-    animation: slideIn 2.5s ease-in-out forwards;
+    transition: all 1s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+    z-index: -1;
+}
+
+    /* transform: translate3d(100%, 0, 0); */
+    /* animation: slideIn 2.5s ease-in-out forwards; */
 
 }
 @keyframes slideIn {
@@ -106,12 +119,11 @@ body .header .imgback{
   }
 body .header .imghead{
     position: absolute;
-    
-    top: 31px;
+    bottom: 0;
     left: 774px;
     /* animation: slideIn 2.5s ease-in-out forwards; */
-    transform: translateY(50px);
-    animation: slideUp 1.5s ease-in-out  forwards 1s;
+    /*transform: translateY(50px);*/
+    animation: slideUp .5s ease-in-out;
 }
 @keyframes slideUp {
     0% {
@@ -126,6 +138,7 @@ body .section__one--page-home{
     display: flex;
     transform: translateY(400px);
     animation: slideUp .8s ease-in-out forwards .8s;
+    padding: 200px 0;
 }
 body .section__one--page-home button{
 background-color: transparent;
@@ -161,7 +174,7 @@ color: #fff;
     color: aquamarine;
 /* background-color: #E63946; */
 /* background-color: #E63946; */
-text-transform: uppercase;
+/* text-transform: uppercase; */
 -webkit-text-fill-color: #E63946;
 -webkit-text-stroke-width: .4px;
 -webkit-text-stroke-color: #000;
@@ -220,8 +233,8 @@ text-transform: uppercase;
   }
 .first__sections .section__frontend .paragh__two{
     margin-left: -7rem;
-    font-size: 24px;
-    line-height: 44px;
+    font-size: 14px;
+    line-height: 24px;
     font-family: Merriweather,sans-serif;
 }
 .first__sections .section__Backend{
@@ -445,9 +458,9 @@ body .last_section button{
 
     body .header .imghead{
         position: absolute;
-        top: 27rem;
+        bottom: 0;
         left: 400px;
-        WIDTH: 300px;
+        width: 300px;
         /* animation: slideIn 1.5s ease-in-out forwards;
         transition: all .8s ease; */
 

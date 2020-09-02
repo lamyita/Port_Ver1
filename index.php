@@ -24,9 +24,8 @@ require('navbar.php')
                     functional websites for my clients.</p>
             </div>
                     <div>
-                        <div class="imgback">
-                            
-                        </div>
+                        <div class="frontbg"></div>
+                        <div class="imgback"></div>
                           <!-- <img class="imgback" src="porfolio_design/assets/bcghead.png" alt="image_header"> -->
                           <img  class="imghead" src="porfolio_design//assets/head.png" alt="image_header">
                     </div>
@@ -238,4 +237,3 @@ require('navbar.php')
  </script> -->
 </body>
 </html>
-
