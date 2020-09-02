@@ -1,0 +1,23 @@
+body footer{
+    text-align: center;
+    padding-top: 87px;
+
+    line-height: 42px;
+    /* margin-top: 40px;
+    margin-bottom: 40px; */
+    background-image: url("porfolio_design/assets/BGfooter.png");
+    background-color: #ffffffaf;
+    background-position: 39% 106%;
+    background-repeat: no-repeat; 
+
+background-size: 63px;
+
+
+
+   
+}
+body footer img{
+   width:147;
+   height: 36px; 
+ 
+}
